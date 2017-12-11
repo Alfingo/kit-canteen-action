@@ -14,9 +14,9 @@ This is the backend for a (currently unpublished), [Dialogflow](https://dialogfl
 
 ## How to use?
 Currently, the action is not publicly available. However, if you run it as your own actions linked to your Google account, it can be invoked as follows.
-* _"Hey Google, ask KIT Canteen what to eat today"_
+* _"Hey Google, ask **KIT Canteen** what to eat today"_
 * _"Hey Google, talk to KIT Canteen"._ ..._"What's in the canteen on thursday?"_
-* _"Hey Google, frag KIT Mensa, was es heute zu essen gibt"_
+* _"Hey Google, frag **KIT Mensa**, was es heute zu essen gibt"_
 * _"Hey Google, sprich mit KIT Mensa"_ ... _"Was gibt es morgen zu essen?"_
 
 ## License
