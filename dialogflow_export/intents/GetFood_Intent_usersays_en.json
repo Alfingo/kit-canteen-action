@@ -1,0 +1,53 @@
+[
+  {
+    "id": "e69bb929-2549-4b4e-8e12-e8f30b3142dc",
+    "data": [
+      {
+        "text": "what\u0027s in the cateen ",
+        "userDefined": false
+      },
+      {
+        "text": "today",
+        "alias": "day",
+        "meta": "@day",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1
+  },
+  {
+    "id": "e8213dd6-d9aa-458c-8898-bcf33e5c871c",
+    "data": [
+      {
+        "text": "what to eat ",
+        "userDefined": false
+      },
+      {
+        "text": "on friday",
+        "alias": "day",
+        "meta": "@day",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "35d5407f-64d9-453b-befe-113d1e1d221e",
+    "data": [
+      {
+        "text": "what to eat in the canteen ",
+        "userDefined": false
+      },
+      {
+        "text": "on friday",
+        "alias": "day",
+        "meta": "@day",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

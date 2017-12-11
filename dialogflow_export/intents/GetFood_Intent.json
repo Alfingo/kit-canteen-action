@@ -1,0 +1,37 @@
+{
+  "id": "beddda4e-0091-4e11-b876-52c431bd7061",
+  "name": "GetFood_Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "950f43df-ba0a-4d6a-a308-ca6d4f5fc515",
+          "required": true,
+          "dataType": "@day",
+          "name": "day",
+          "value": "$day",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "de",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1512944849,
+  "fallbackIntent": false,
+  "events": []
+}

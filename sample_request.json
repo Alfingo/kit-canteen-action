@@ -1,0 +1,36 @@
+{
+    "id": "<SOME_UUID_HERE>",
+    "timestamp": "2017-12-10T22:47:12.464Z",
+    "lang": "en",
+    "result": {
+        "source": "agent",
+        "resolvedQuery": "what to eat today",
+        "speech": "",
+        "action": "",
+        "actionIncomplete": false,
+        "parameters": {
+            "day": "today"
+        },
+        "contexts": [],
+        "metadata": {
+            "intentId": "<SOME_INTENT_ID_HERE>",
+            "webhookUsed": "true",
+            "webhookForSlotFillingUsed": "false",
+            "intentName": "GetFood_Intent"
+        },
+        "fulfillment": {
+            "speech": "",
+            "messages": [{
+                "type": 0,
+                "speech": ""
+            }]
+        },
+        "score": 1.0
+    },
+    "status": {
+        "code": 200,
+        "errorType": "success",
+        "webhookTimedOut": false
+    },
+    "sessionId": "<SOME_SESSION_ID_HERE>"
+}

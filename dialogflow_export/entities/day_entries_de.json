@@ -1,0 +1,63 @@
+[
+  {
+    "value": "montag",
+    "synonyms": [
+      "montag",
+      "montags",
+      "am montag",
+      "diesen montag"
+    ]
+  },
+  {
+    "value": "dienstag",
+    "synonyms": [
+      "dienstag",
+      "dienstags",
+      "am dienstag",
+      "diesen dienstag"
+    ]
+  },
+  {
+    "value": "mittwoch",
+    "synonyms": [
+      "mittwoch",
+      "mittwochs",
+      "am mittwoch",
+      "diesen mittwoch"
+    ]
+  },
+  {
+    "value": "donnerstag",
+    "synonyms": [
+      "donnerstag",
+      "donnerstags",
+      "am donnerstag",
+      "diesen donnerstag"
+    ]
+  },
+  {
+    "value": "freitag",
+    "synonyms": [
+      "freitag",
+      "freitags",
+      "am freitag",
+      "diesen freitag"
+    ]
+  },
+  {
+    "value": "samstag",
+    "synonyms": [
+      "samstag",
+      "am samstag",
+      "diesen samstag"
+    ]
+  },
+  {
+    "value": "sonntag",
+    "synonyms": [
+      "sonntag",
+      "am sonntag",
+      "diesen sonntag"
+    ]
+  }
+]

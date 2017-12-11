@@ -1,0 +1,81 @@
+[
+  {
+    "id": "da9b99d8-897c-4205-9640-25c8031b5ebd",
+    "data": [
+      {
+        "text": "was es heute zu essen gibt",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "9ab55f2b-df51-4f07-97d5-6d9b6c644a90",
+    "data": [
+      {
+        "text": "was es ",
+        "userDefined": false
+      },
+      {
+        "text": "am donnerstag",
+        "alias": "day",
+        "meta": "@day",
+        "userDefined": false
+      },
+      {
+        "text": " in der mensa gibt",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1
+  },
+  {
+    "id": "09bf4f29-c2ee-4858-83bc-845fe7895bc5",
+    "data": [
+      {
+        "text": "was kann ich ",
+        "userDefined": false
+      },
+      {
+        "text": "morgen",
+        "alias": "day",
+        "meta": "@day",
+        "userDefined": false
+      },
+      {
+        "text": " in der mensa ",
+        "userDefined": false
+      },
+      {
+        "text": "essen",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1
+  },
+  {
+    "id": "dd73e9a8-7fde-43cc-99d6-02cadf417636",
+    "data": [
+      {
+        "text": "was gibt es ",
+        "userDefined": false
+      },
+      {
+        "text": "am samstag",
+        "alias": "day",
+        "meta": "@day",
+        "userDefined": false
+      },
+      {
+        "text": " in der mensa",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]
