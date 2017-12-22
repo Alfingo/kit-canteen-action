@@ -34,12 +34,16 @@ app.post('/', (req, res) => {
 
     let lang = resolveLanguage(req.body.lang)
 
-    if (!req.body.result.metadata.intentName === 'GetFood_Intent') {
+    if (!req.body.result.metadata.intentName === 'GetFood_Intent' || !req.body.result.parameters.day) {
         let message = string[lang]['noday']
         return res.send({ speech: message, displayText: message })
     }
 
     let date = resolveDate(req.body.result.parameters.day, lang)
+    if (!date) {
+        let message = string[lang]['noday']
+        return res.send({ speech: message, displayText: message })
+    }
 
     if (!date.is().weekday()) {
         let message = strings[lang]['closed_weekend']
@@ -67,6 +71,7 @@ function getOrFetchMeals(canteenId, date) {
     if (cachedData) return Promise.resolve(cachedData)
 
     let url = `${OPENMENSA_BASE}/${canteenId}/days/${date.toString('yyyy-MM-dd')}/meals`
+    if (DEBUG) console.log(`Requesting ${url}`)
     return axios.get(url)
         .then(res => {
             cache.put(`${canteenId}-${date.toString()}`, res.data, 1000 * 60 * 60 * 24)
@@ -107,46 +112,46 @@ function startsWithCapitalLetter(word) {
 function resolveDate(dateParam, lang) {
     switch (lang) {
         case 'en':
-            switch (dateParam) {
+            switch (dateParam.toLowerCase()) {
                 case 'tomorrow':
-                    return Date.today().addDays(1)
+                    return new Date().addDays(1)
                 case 'monday':
-                    return Date.today().next().monday()
+                    return new Date().next().monday()
                 case 'tuesday':
-                    return Date.today().next().tuesday()
+                    return new Date().next().tuesday()
                 case 'wednesday':
-                    return Date.today().next().wednesday()
+                    return new Date().next().wednesday()
                 case 'thursday':
-                    return Date.today().next().thursday()
+                    return new Date().next().thursday()
                 case 'friday':
-                    return Date.today().next().friday()
+                    return new Date().next().friday()
                 case 'saturday':
-                    return Date.today().next().saturday()
+                    return new Date().next().saturday()
                 case 'sunday':
-                    return Date.today().next().sunday()
+                    return new Date().next().sunday()
                 default:
-                    return Date.today()
+                    return null
             }
         case 'de':
-            switch (dateParam) {
+            switch (dateParam.toLowerCase()) {
                 case 'morgen':
-                    return Date.today().addDays(1)
+                    return new Date().addDays(1)
                 case 'montag':
-                    return Date.today().next().monday()
+                    return new Date().next().monday()
                 case 'dienstag':
-                    return Date.today().next().tuesday()
+                    return new Date().next().tuesday()
                 case 'mittwoch':
-                    return Date.today().next().wednesday()
+                    return new Date().next().wednesday()
                 case 'donnerstag':
-                    return Date.today().next().thursday()
+                    return new Date().next().thursday()
                 case 'freitag':
-                    return Date.today().next().friday()
+                    return new Date().next().friday()
                 case 'samstag':
-                    return Date.today().next().saturday()
+                    return new Date().next().saturday()
                 case 'sonntag':
-                    return Date.today().next().sunday()
+                    return new Date().next().sunday()
                 default:
-                    return Date.today()
+                    return null
             }
     }
 
