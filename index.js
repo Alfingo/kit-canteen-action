@@ -16,14 +16,14 @@ const strings = {
         'and': 'and',
         'noday': 'Sorry, you need to tell me a specific day.',
         'closed_weekend': 'The canteen is closed on weekends.',
-        'failed': 'Sorry, I couldn\'t get the meals for that day.'
+        'failed': 'Sorry, I couldn\'t get the meals for that day. May the canteen be closed on that day?'
     },
     de: {
         'offers': 'bietet',
         'and': 'und',
         'noday': 'Bitte nenne mir einen Tag.',
         'closed_weekend': 'Die Mensa ist am Wochenende geschlossen.',
-        'failed': 'Sorry, ich konnte den Speiseplan nicht abrufen.'
+        'failed': 'Sorry, ich konnte den Speiseplan nicht abrufen. Hat die Mensa an diesem Tag vielleicht geschlossen?'
     }
 }
 
