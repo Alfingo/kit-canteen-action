@@ -40,10 +40,6 @@ app.post('/', (req, res) => {
     }
 
     let date = resolveDate(req.body.result.parameters.day, lang)
-    if (!date) {
-        let message = string[lang]['noday']
-        return res.send({ speech: message, displayText: message })
-    }
 
     if (!date.is().weekday()) {
         let message = strings[lang]['closed_weekend']
@@ -130,7 +126,7 @@ function resolveDate(dateParam, lang) {
                 case 'sunday':
                     return new Date().next().sunday()
                 default:
-                    return null
+                    return new Date()
             }
         case 'de':
             switch (dateParam.toLowerCase()) {
@@ -151,7 +147,7 @@ function resolveDate(dateParam, lang) {
                 case 'sonntag':
                     return new Date().next().sunday()
                 default:
-                    return null
+                    return new Date()
             }
     }
 
