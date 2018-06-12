@@ -7,7 +7,7 @@ const app = require('express')(),
 
 const PORT = process.env.PORT ? parseInt(process.env.PORT) : 8000
 const DEBUG = process.env.DEBUG === 'true' ? true : false
-const DEFAULT_CANTEEN_ID = 31
+const DEFAULT_CANTEEN_ID = 734
 const OPENMENSA_BASE = 'https://openmensa.org/api/v2/canteens'
 
 const strings = {
